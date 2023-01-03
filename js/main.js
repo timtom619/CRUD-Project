@@ -15,6 +15,14 @@
 //       });
 // }
 
+// "Click to start prompt - Asking User to make a selection"
+const start = document.getElementById('startBtn').addEventListener('click', startGame);
+
+function startGame() {
+  const prompt = document.getElementById('selection-prompt');
+  prompt.innerText = 'Make your selection';
+}
+
 // Creates a random selection
 function randomRpsGenerator() {
   let random = Math.random();
