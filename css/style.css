@@ -15,7 +15,19 @@ img{
   margin: 0 auto;
 }
 
+.container{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+.title{
+  width: 20%;
+  height: 20%;
+}
