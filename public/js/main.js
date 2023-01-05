@@ -23,21 +23,8 @@ function startGame() {
   prompt.innerText = 'Make your selection';
 }
 
-// Creates a random selection
-function randomRpsGenerator() {
-  let random = Math.random();
-  if (random < 0.33) {
-    return "rock";
-  } else if (random < 0.66) {
-    return "paper";
-  } else {
-    return "scissors";
-  }
-}
-
-//
-function rockPaperScissors(human) {
-  let computer = randomRpsGenerator();
+// this determines who wins the current hand
+function rockPaperScissors(human, computer) {
   if (
     (human === "rock" && computer === "scissors") ||
     (human === "scissors" && computer === "paper") ||
@@ -51,5 +38,5 @@ function rockPaperScissors(human) {
   }
 }
 
-console.log(randomRpsGenerator());
-console.log(rockPaperScissors("scissors"));
+// console.log(randomRpsGenerator());
+// console.log(rockPaperScissors("scissors"));
