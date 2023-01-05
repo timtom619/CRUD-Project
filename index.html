@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
 
-		<title>Rock, Paper, Scissors</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This is where your description goes">
+	<meta name="keywords" content="one, two, three">
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<header>
-			<div class="title container">
-				<img src="img\Title.svg" alt="title image">
-			</div>
-		</header>
-		
-		<section class="game">
-			<div class="choices container">
-				<button type="button" name="button">Rock</button>
-				<button type="button" name="button">Paper</button>
-				<button type="button" name="button">Scissors</button>
-			</div>
+	<title>Rock, Paper, Scissors</title>
 
-			<div id="selection-prompt" class="container"></div>
-			<div class="container">
-				<button id= "startBtn" type="button" name="button">Click to start</button>
-			</div>
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
 
-			<div class="match">
-				<div class ="hands">
-					<img class="player-hand" src="" alt="">
-					<img class="computer-hand" src="" alt="">
-				</div>
+<body>
+	<header>
+		<div class="title container">
+			<img src="img\Title.svg" alt="title image">
+		</div>
+	</header>
+
+	<div class="game">
+
+		<div class="container">
+			<img class="choice" src="img\Rock.svg" alt="rock image">
+			<img class="choice" src="img\Paper.svg" alt="paper image">
+			<img class="choice" src="img\Scissors.svg" alt="scissors image">
+		</div>
+
+		<div class="choices container">
+			<button type="button" name="button">Rock</button>
+			<button type="button" name="button">Paper</button>
+			<button type="button" name="button">Scissors</button>
+		</div>
+
+		<div id="selection-prompt" class="container"></div>
+		<div class="container">
+			<button id="startBtn" type="button" name="button">Click to start</button>
+		</div>
+
+		<div class="match">
+			<div class="hands">
+				<img class="player-hand" src="" alt="">
+				<img class="computer-hand" src="" alt="">
 			</div>
+		</div>
+
+		<div class="print-results"></div>
 
 			<div class="print-results container">
 				<h2>Result:</h2>
@@ -54,5 +65,7 @@
 		</section>
 
 		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+	</div>
+</body>
+
 </html>
