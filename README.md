@@ -135,19 +135,29 @@ This is an example of how to list things you need to use the software and how to
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+0. ensure node is installed; if installed, the command below will return a version number (e.g., v18.2.0)
+    ```sh
+    node -v
+    ```
+
+1. clone the repo
+    ```sh
+    git clone https://github.com/timtom619/CRUD-Project.git
+    ```
+
+2. cd into CRUD-Project directory
+
+3. install NPM packages
+    ```sh
+    npm install
+    ```
+
+4. start server
+    ```sh
+    node server.js
+    ```
+
+5. open web browser and navigate to http://localhost:8000/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
