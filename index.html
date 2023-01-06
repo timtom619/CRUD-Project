@@ -1,27 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 	<head>
 		<style> @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Sonsie+One&display=swap'); </style>
     	<meta charset="utf-8">
     	<meta name="description" content="This is where your description goes">
     	<meta name="keywords" content="one, two, three">
+=======
+>>>>>>> 6db63190de165d52712cd335076ed89ff1cceae4
 
-		<title>Rock, Paper, Scissors</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This is where your description goes">
+	<meta name="keywords" content="one, two, three">
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
+	<title>Rock, Paper, Scissors</title>
 
-		<h1>Which Pokemon?</h1>
-		<input type="text" name="" value="">
-		<button type="button" name="button">Get Pokemon</button>
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
 
-		<h2>Name?</h2>
-		<img src="img/pokemon.jpeg" alt="">
-		<h3>Type?</h3>
+<body>
+	<header>
+		<div class="title container">
+			<img src="img\Title.svg" alt="title image">
+		</div>
+	</header>
+
+	<div class="game">
+
+		<div class="container">
+			<img class="choice" src="img\Rock.svg" alt="rock image">
+			<img class="choice" src="img\Paper.svg" alt="paper image">
+			<img class="choice" src="img\Scissors.svg" alt="scissors image">
+		</div>
+
+		<div class="choices container">
+			<button type="button" name="button">Rock</button>
+			<button type="button" name="button">Paper</button>
+			<button type="button" name="button">Scissors</button>
+		</div>
+
+		<div id="selection-prompt" class="container"></div>
+		<div class="container">
+			<button id="startBtn" type="button" name="button">Click to start</button>
+		</div>
+
+		<div class="match">
+			<div class="hands">
+				<img class="player-hand" src="" alt="">
+				<img class="computer-hand" src="" alt="">
+			</div>
+		</div>
+
+		<div class="print-results"></div>
+
+			<div class="print-results container">
+				<h2>Result:</h2>
+			</div>
+
+			<div class="score container">
+				<div class="player-score">
+				  <h2>Player</h2>
+				  <p>0</p>
+				</div>
+				<div class="computer-score">
+				  <h2>Computer</h2>
+				  <p>0</p>
+				</div>
+			  </div>
+		</section>
 
 		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+	</div>
+</body>
+
 </html>
