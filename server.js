@@ -1,26 +1,30 @@
-const dotenv = require('dotenv').config({path: __dirname+'/config/.env'})
+const dotenv = require("dotenv").config({ path: __dirname + "/config/.env" });
 
-const express = require('express');
-const app = express()
-const cors = require('cors')
+const express = require("express");
+const app = express();
+const cors = require("cors");
+const path = require("path");
 
-const PORT = process.env.PORT
-
-app.use(cors())
-app.use(express.static('public'))
+app.use(cors());
+app.use(express.static("public"));
 
 // serves index.html
-app.get('/', (req, res) => {
-    res.sendFile(__dirname+'/index.html')
-})
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
+});
+
+// generate a random choice for the computer
+const randomRpsGenerator = () => {
+  const choices = ["rock", "paper", "scissors"];
+  const randomIndex = Math.floor(Math.random() * choices.length);
+  return choices[randomIndex];
+};
 
 // responds with rock, paper, or scissors
-app.get('/computerChoice', (req, res) => {
-    const computerChoices = ['rock', 'paper', 'scissors']
-    const computerChoice = computerChoices[Math.floor( Math.random() * 3 )] 
-    res.json(computerChoice)
-})
+app.get("/computerChoice", (req, res) => {
+  const computerChoices = randomRpsGenerator();
+  res.json(computerChoice);
+});
 
-app.listen(PORT, () => {
-    console.log(`server running on port: ${PORT}`)
-})
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => console.log(`server running on port: ${PORT}`));
